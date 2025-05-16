@@ -166,6 +166,9 @@ MonoBehaviour:
   _shapeImg: {fileID: 3928356960089825467}
   _borderImg: {fileID: 335726307938116788}
   _animalImg: {fileID: 1311688829997155828}
+  _stickyConnectionRadius: 0.2
+  _explosionForce: 10
+  _explosionRadius: 2
 --- !u!58 &8143862540097534285
 CircleCollider2D:
   m_ObjectHideFlags: 0

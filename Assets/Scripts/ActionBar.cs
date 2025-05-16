@@ -7,6 +7,7 @@ public class ActionBar : MonoBehaviour
 
     public Action onClear;
     public Action onFull;
+    public Action onAdd;
 
     public void AddAnimal(AnimalShape animalShape)
     {
@@ -21,6 +22,7 @@ public class ActionBar : MonoBehaviour
                 {
                     cell.SetCell(animalShape.shape, animalShape.color, animalShape.animal);
                     isPlaced = true;
+                    onAdd?.Invoke();
                 }
                 else
                     isFull = false;

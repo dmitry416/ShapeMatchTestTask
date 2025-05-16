@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             for (int j = 0; j < 3; ++j)
             {
                 AnimalShape animalShape = Instantiate(_shapePrefab);
-                animalShape.SetView(shape, border, animal, color);
+                animalShape.SetView(shape, border, animal, color, (ShapeType)(4 - Mathf.Sqrt(UnityEngine.Random.Range(0.01f, 16f))));
                 animalShape.onClick += MoveToActionBar;
                 _animalShapes[i * 3 + j] = animalShape;
             }
